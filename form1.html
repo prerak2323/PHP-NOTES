@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms1</title>
+</head>
+<body>
+    <!simple form>
+    <form method="post" action="form1.php">
+        <p><label for="user">Name</label><br />
+        <input type="text" id="user" name="user"> </p>
+        <p><label for="message">Message</label> <br />
+        <textarea id="message" name="message" rows="5" cols="40"></textarea>
+     </p>
+     <button type="submit" name="submit" value="send">Send Message</button>
+    </form>
+
+    <! Accessing forms input with user-defined arrays>
+    <form action="form1.php" method="post">
+        <p><label>Name</label><br />
+        <input type="text" name="user"></p>
+        <fieldset>
+            <legend>Select Some Products</legend><br />
+            <input type="checkbox" id="tricorder" name="products[]" value="Tricorder">
+            <label for="tricorder">Tricorder</label>
+
+            <input type="checkbox" id="ORAC_AI" name="products[]" value="ORAC_AI">
+            <label for="ORAC_AI">ORAC AI</label>
+
+            <input type="checkbox" id="HAL_2000" name="products[]"
+            value="HAL 2000">
+            <label for="HAL_2000">HAL 2000</label>
+        </fieldset>
+        <button type="submit" name="submit" value="submit">Submit Form</button>
+    </form>
+
+</body>
+</html>
